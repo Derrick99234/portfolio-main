@@ -1,12 +1,14 @@
 import Image from "next/image";
-import { MdOutlineArrowRight } from "react-icons/md";
-import { MdDeveloperMode } from "react-icons/md";
+import { MdOutlineArrowRight, MdDeveloperMode } from "react-icons/md";
 import { SiMaterialdesignicons } from "react-icons/si";
 import { TbBrandUnsplash } from "react-icons/tb";
 import { SiLinuxfoundation } from "react-icons/si";
-import { IoMdApps } from "react-icons/io";
+import { IoLogoJavascript, IoMdApps } from "react-icons/io";
 import { TiVideo } from "react-icons/ti";
-
+import { CiPlay1, CiStar } from "react-icons/ci";
+import { FaDatabase } from "react-icons/fa";
+import { IoLogoReact } from "react-icons/io5";
+import { AiOutlinePython } from "react-icons/ai";
 export default function Home() {
   return (
     <>
@@ -236,6 +238,73 @@ export default function Home() {
               </div>
           </div>
       </div>
+      </section>
+
+      <section className="bg-slate-900 h-[65vh] flex items-center flex-col">
+        <div className="bg-black/10 -mt-14 mb-14 p-3 rounded-full">
+          <div className="bg-blue-900 text-white w-24 rounded-full h-24 flex justify-center items-center text-4xl font-bold"><CiPlay1 /></div>
+        </div>
+        <h2 className="text-2xl text-white font-semibold text-center">Need help with template customization?<br /> Get in touch with us!</h2>
+        <p className="text-white text-center mt-10 hover:underline font-mono font">pshubomi@gmail.com</p>
+
+        <div className="bg-white w-4/6 h-[300px] mt-24 flex justify-center flex-col items-center gap-8 -mb-24 shadow-md">
+          <div className="flex justify-center items-center gap-24 text-6xl text-slate-500">
+            <IoLogoJavascript />
+            <AiOutlinePython />
+            <FaDatabase />
+            <IoLogoReact />
+          </div>
+          <p>Empowering 120,000+Businesses with Innovation <span className="text-blue-900">trusted clients</span>.</p>
+        </div>
+      </section>
+      <section className="min-h-[120vh] flex justify-center items-center">
+        <div className="flex justify-center items-center gap-20">
+          <div className="max-w-md">
+            <span className="text-slate-900 font-semibold">Testimonials</span>
+            <h2 className="text-3xl font-bold mt-2 mb-6">Experience & Skills</h2>
+            <p className="leading-9 text-[#969292] text-pretty">
+              Testimonials are one of the most important tools a company can use to show potential customers how valuable their products and services are. Testimonials are a short statement that describes how a product or service worked for a customer. Testimonials can help build trust and credibility with your customers.
+            </p>
+            <button className="mt-8 px-9 py-3 bg-slate-800 text-white">CONTACT ME</button>
+          </div>
+          <div className="p-14 max-w-md shadow-lg">
+            <span className="items-center gap-1 text-lg mb-5 inline-flex"><CiStar /><CiStar /><CiStar /><CiStar /><CiStar /></span>
+            <p>
+              Wonderful support. Immediate response and they return with and easy fix and clear information. Applied the fix and worked like a charm, you can definitely trust this developers!
+            </p>
+            <div className="flex gap-5 mt-10">
+              <Image
+                src={"https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg"}
+                width={500}
+                height={500}
+                alt="Profile Picture"
+                className="object-cover rounded-full w-20 h-20"
+              />
+              <div className="">
+                <h3 className="text-2xl font-semibold">Derrick Smith</h3>
+                <span className="text-slate-500 text-sm">Deritech company</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="min-h-screen flex justify-center py-[8rem]">
+      <div className="max-w-5xl w-full">
+          <span className="text-slate-900 font-semibold">Testimonials</span>
+          <h2 className="text-3xl font-bold mt-2 mb-6">Experience & Skills</h2>
+
+          <div className="">
+            <div className="">
+              <Image
+                src={"https://marketifythemes.net/new/arlo/img/thumbs/4-3.jpg"}
+                width={500}
+                height={500}
+                alt="Testimonial Image"
+                className="object-cover rounded-md w-20 h-20"
+              />
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );
