@@ -1,8 +1,39 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ["media.wired.com", "images.unsplash.com", "plus.unsplash.com", "media.sproutsocial.com", "marketifythemes.net"],
-    }
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'media.wired.com',
+                port: '',
+                pathname: '/*'
+            },
+            {
+                protocol: 'https',
+                hostname: 'images.unsplash.com',
+                port: '',
+                pathname: '/*'
+            },
+            {
+                protocol: 'https',
+                hostname: 'plus.unsplash.com',
+                port: '',
+                pathname: '/*'
+            },
+            {
+                protocol: 'https',
+                hostname: 'media.sproutsocial.com',
+                port: '',
+                pathname: '/*'
+            },
+            {
+                protocol: 'https',
+                hostname: 'images.pexels.com',
+                port: '',
+                pathname: '/*'
+            }
+        ],
+    },
 };
 
 export default nextConfig;
