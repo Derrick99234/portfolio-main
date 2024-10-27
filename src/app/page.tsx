@@ -28,13 +28,13 @@ export default function Home() {
         }}
       >
         <div className="relative z-10 text-white flex justify-center items-center flex-col h-screen">
-          <h1 className="text-5xl font-bold">OLATUNBOSUN OLASHUBOMI</h1>
+        <h1 className="font-bold text-clamp text-center whitespace-nowrap">OLATUNBOSUN OLASHUBOMI</h1>
           <span className="font-serif my-3">SOFTWARE ENGINEER</span>
           <button className="mt-4 py-2 px-12 text-xl font-semibold bg-slate-900">Contact Me</button>
         </div>
         <span className="absolute left-0 bottom-16 bg-slate-800 text-white text-2xl p-1"><MdOutlineArrowRight /></span>
       </section>
-      <section className="flex justify-center gap-20 items-center min-h-[90vh] max-[1037px]:flex-col max-[1037px]:p-36 max-[1037px]:px-8">
+      <section className="flex justify-center gap-20 items-center min-h-[90vh] max-[1037px]:flex-col max-[1037px]:p-36 max-[1037px]:px-8 bg-white">
         <Image
           src="https://media.wired.com/photos/5c804d88b948cc3e882264a3/master/w_1600,c_limit/zucc-962130544.jpg"
           alt="Profile Picture"
@@ -51,7 +51,7 @@ export default function Home() {
           <button className="mt-8 px-9 py-3 bg-slate-800 text-white">DOWNLOAD CV</button>
         </div>
       </section>
-      <section className="min-h-[28vh] bg-slate-800 opacity-90 grid grid-cols-4 max-[1037px]:grid-cols-2 gap-10 max-[1037px]:py-14 place-items-center">
+      <section className="min-h-[28vh] bg-slate-800 opacity-90 grid grid-cols-4 max-[1037px]:grid-cols-2 max-[747px]:grid-cols-1 gap-10 max-[1037px]:py-14 place-items-center">
         <div className="">
           <span className="text-white text-3xl font-bold text-center block mb-3">777</span>
           <p className="text-md text-[#969292]">Project Completed</p>
@@ -69,11 +69,11 @@ export default function Home() {
           <p className="text-md text-[#969292]">Satisfaction Guarantee</p>
         </div>
       </section>
-      <section className="min-h-screen py-[8rem] flex justify-center max-[1037px]:px-8">
+      <section className="min-h-screen py-[8rem] flex justify-center max-[1037px]:px-8 bg-white">
         <div className="max-w-5xl w-full">
           <span className="text-slate-900 font-semibold">Services</span>
           <h2 className="text-3xl font-bold mt-2 mb-6">What I Offer</h2>
-          <div className="mt-20 grid grid-cols-3 gap-10 max-[1037px]:grid-cols-2">
+          <div className="mt-20 grid grid-cols-3 gap-10 max-[1037px]:grid-cols-2 max-[747px]:grid-cols-1">
             <div className="shadow-lg bg-white p-10 py-12 gap-4 flex flex-col group max-w-[270px] hover:bg-slate-900 transition-colors hover:text-white origin-top-left max-[1037px]:max-w-full">
               <span className="bg-slate-900 group-hover:bg-white w-20 h-20 flex justify-center items-center rounded-full group-hover:text-slate-900 text-white text-3xl"><SiMaterialdesignicons /></span>
               <h2 className="text-2xl font-bold mt-5">Creative Design</h2>
@@ -117,7 +117,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-slate-50 min-h-[90vh] flex justify-center py-[8rem] max-[1037px]:px-8" >
+      <section className="bg-slate-50 min-h-[90vh] flex justify-center py-[8rem] max-[1037px]:px-8" > 
         <div className="max-w-5xl w-full">
           <span className="text-slate-900 font-semibold">Skills</span>
           <h2 className="text-3xl font-bold mt-2 mb-6">Experience & Skills</h2>
@@ -125,7 +125,7 @@ export default function Home() {
           <div className="mt-20 grid grid-cols-2 max-[1037px]:grid-cols-1 gap-10">
             <div className="">
               <h2 className="text-2xl font-semibold mb-6">Frontend Skills</h2>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 max-[747px]:grid-cols-1 gap-4">
                 <div className="py-3 px-8 bg-slate-200 text-[#333] max-w-[200px] max-[1037px]:max-w-full uppercase font-medium">Html - 85%</div>
                 <div className="py-3 px-8 bg-slate-200 text-[#333] max-w-[200px] max-[1037px]:max-w-full uppercase font-medium">Css - 85%</div>
                 <div className="py-3 px-8 bg-slate-200 text-[#333] max-w-[200px] max-[1037px]:max-w-full uppercase font-medium">JavaScript - 85%</div>
@@ -137,7 +137,7 @@ export default function Home() {
             </div>
             <div className="">
               <h2 className="text-2xl font-semibold mb-6">Backend Skills</h2>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 max-[747px]:grid-cols-1">
                 <div className="py-3 px-8 bg-blue-100 text-[#333] max-w-[200px] max-[1037px]:max-w-full uppercase font-medium">Mongodb - 85%</div>
                 <div className="py-3 px-8 bg-blue-100 text-[#333] max-w-[200px] max-[1037px]:max-w-full uppercase font-medium">Node - 85%</div>
                 <div className="py-3 px-8 bg-blue-100 text-[#333] max-w-[200px] max-[1037px]:max-w-full uppercase font-medium">Express - 85%</div>
@@ -152,19 +152,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="min-h-screen flex justify-center py-[8rem] max-[1037px]:px-8">
+      <section className="min-h-screen flex justify-center py-[8rem] max-[1037px]:px-8 bg-white">
       <div className="max-w-5xl w-full">
           <span className="text-slate-900 font-semibold">Works</span>
           <h2 className="text-3xl font-bold mt-2 mb-6">Creative Portfolio</h2>
-          <div className="flex gap-5 items-center font-medium">
-            <span className="text-blue-950">All</span>
+          <div className="flex gap-5 max-[653px]:flex-wrap items-center font-medium max-[653px]:w-full">
+            <span className="text-blue-950 max-[653px]:text-sm">All</span>
             <span>Youtube</span>
             <span>Vimeo</span>
             <span>Soundcloud</span>
             <span>Popup</span>
             <span>Content</span>
           </div>
-          <div className="grid grid-cols-3 max-[1037px]:grid-cols-2 gap-10 mt-20">
+          <div className="grid grid-cols-3 max-[1037px]:grid-cols-2 max-[747px]:grid-cols-1 gap-10 mt-20">
             <div className="max-w-80 max-[1037px]:max-w-full h-60 relative text-white group overflow-hidden transition-all">
               <Image
                 src="https://images.unsplash.com/photo-1699891730669-2d15cf3a5979?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
@@ -254,17 +254,17 @@ export default function Home() {
         <h2 className="text-2xl text-white font-semibold text-center">Need help with template customization?<br /> Get in touch with us!</h2>
         <p className="text-white text-center mt-10 hover:underline font-mono font">pshubomi@gmail.com</p>
 
-        <div className="bg-white w-4/6 max-[1037px]:w-4/5 h-[300px] mt-24 flex justify-center flex-col items-center gap-8 -mb-24 shadow-md">
+        <div className="bg-white w-4/6 max-[1037px]:w-4/5 h-[300px] max-[653px]:w-[95%] mt-24 max-[653px]:p-4 flex justify-center flex-col items-center gap-8 -mb-24 shadow-md">
           <div className="flex justify-center items-center gap-24 text-6xl text-slate-500">
-            <IoLogoJavascript />
+            <IoLogoJavascript className="max-[601px]:hidden" />
             <AiOutlinePython />
-            <FaDatabase />
-            <IoLogoReact />
+            <FaDatabase className="max-[747px]:hidden" />
+            <IoLogoReact className="max-[747px]:hidden" />
           </div>
-          <p>Empowering 120,000+Businesses with Innovation <span className="text-blue-900">trusted clients</span>.</p>
+          <p className="max-[653px]:p-4 max-[653px]:text-center">Empowering 120,000+Businesses with Innovation <span className="text-blue-900">trusted clients</span>.</p>
         </div>
       </section>
-      <section className="min-h-[120vh] flex justify-center items-center max-[1037px]:px-8 max-[1037px]:pt-36">
+      <section className="min-h-[120vh] flex justify-center items-center max-[1037px]:px-8 max-[1037px]:pt-36 bg-white">
         <div className="flex justify-center items-center gap-20 max-[1037px]:flex-col">
           <div className="max-w-md max-[1037px]:max-w-full">
             <span className="text-slate-900 font-semibold">Blog</span>
@@ -274,7 +274,7 @@ export default function Home() {
             </p>
             <button className="mt-8 px-9 py-3 bg-slate-800 text-white">CONTACT ME</button>
           </div>
-          <div className="p-14 max-w-md shadow-lg max-[1037px]:max-w-full">
+          <div className="p-14 max-w-md shadow-lg max-[1037px]:max-w-full max-[645px]:p-5">
             <span className="items-center gap-1 text-lg mb-5 inline-flex"><CiStar /><CiStar /><CiStar /><CiStar /><CiStar /></span>
             <p>
               Wonderful support. Immediate response and they return with and easy fix and clear information. Applied the fix and worked like a charm, you can definitely trust this developers!
@@ -300,7 +300,7 @@ export default function Home() {
           <span className="text-slate-900 font-semibold">Testimonials</span>
           <h2 className="text-3xl font-bold mt-2 mb-6">Experience & Skills</h2>
 
-          <div className="mt-20 grid grid-cols-3 max-[1037px]:grid-cols-2 gap-10">
+          <div className="mt-20 grid grid-cols-3 max-[1037px]:grid-cols-2 max-[747px]:grid-cols-1 gap-10">
             <div className="w-72 max-[1037px]:w-full shadow-md bg-white overflow-hidden">
             <div className="overflow-hidden">
               <Image
@@ -308,7 +308,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 alt="Testimonial Image"
-                className="object-cover hover:scale-125 transition-all duration-300"
+                className="object-cover w-full hover:scale-125 transition-all duration-300"
               />
               </div>
                 <div className="p-8">
@@ -324,7 +324,7 @@ export default function Home() {
                     width={500}
                     height={500}
                     alt="Testimonial Image"
-                    className="object-cover hover:scale-125 transition-all duration-300"
+                    className="object-cover hover:scale-125 w-full transition-all duration-300"
                 />
                 </div>
                 <div className="p-8">
@@ -340,7 +340,7 @@ export default function Home() {
                 width={500}
                 height={500}
                 alt="Testimonial Image"
-                className="object-cover hover:scale-125 transition-all duration-300"
+                className="object-cover hover:scale-125 w-full transition-all duration-300"
               />
               </div>
                 <div className="p-8">
@@ -352,7 +352,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="min-h-[90vh] flex justify-center py-[8rem] max-[1037px]:px-8">
+      <section className="min-h-[90vh] flex justify-center py-[8rem] max-[1037px]:px-8 bg-white">
       <div className="max-w-5xl w-full">
           <span className="text-slate-900 font-semibold">Contact</span>
           <h2 className="text-3xl font-bold mt-2 mb-6">Get in Touch</h2>
