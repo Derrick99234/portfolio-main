@@ -2,32 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .text-clamp {
   font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
 }
 
+@layer base {
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  html.dark {
+    color-scheme: dark;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    @apply min-h-screen bg-gradient-to-b from-white via-white to-slate-50 text-slate-900 dark:from-slate-950 dark:via-slate-950 dark:to-slate-900 dark:text-slate-100;
+  }
+
+  ::selection {
+    @apply bg-slate-900 text-white;
+  }
+
+  html.dark ::selection {
+    @apply bg-white text-slate-900;
+  }
+
+  a,
+  button,
+  input,
+  textarea {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 dark:focus-visible:ring-slate-600 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-950;
   }
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
