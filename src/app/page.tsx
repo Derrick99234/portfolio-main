@@ -13,6 +13,15 @@ type Project = {
   repo?: string;
 };
 
+type Experience = {
+  company: string;
+  location: string;
+  role: string;
+  dates: string;
+  workMode?: string;
+  highlights: string[];
+};
+
 const projects: Project[] = [
   {
     title: "API Platform",
@@ -35,24 +44,71 @@ const projects: Project[] = [
 ];
 
 const frontendSkills = [
-  "React",
+  "React.js",
   "Next.js",
-  "TypeScript",
-  "JavaScript",
-  "HTML",
-  "CSS",
+  "HTML5",
+  "CSS3",
   "Tailwind CSS",
+  "Bootstrap",
 ];
 
 const backendSkills = [
   "Node.js",
   "Express.js",
-  "NestJS",
-  "MongoDB (Mongoose)",
-  "JWT / RBAC",
+  "Nest.js",
+  "MongoDB",
+  "Postman",
+  "AWS",
   "Python",
-  "Django",
   "Firebase",
+  "Django",
+  "JWT / RBAC",
+  "TypeScript",
+  "JavaScript",
+];
+
+const mobileSkills = ["React Native"];
+
+const toolsSkills = ["Jira", "Trello", "Figma", "VS Code", "Git", "GitHub"];
+
+const experience: Experience[] = [
+  {
+    company: "Sleeky Programmers Limited",
+    location: "Remote",
+    role: "Intern Software Engineer",
+    dates: "Aug 2024 – Present",
+    highlights: [
+      "Participated in code reviews to maintain high-quality standards and best practices.",
+      "Worked in Agile ceremonies (sprint planning, stand-ups, retrospectives).",
+      "Built RESTful APIs and integrated third-party services to streamline application processes.",
+      "Contributed to scalable web applications using Next.js, Nest.js, Express.js, React, MongoDB, Node.js, and TypeScript.",
+      "Used Git workflows to collaborate, resolve conflicts, and keep a clean development pipeline.",
+      "Wrote technical documentation for project workflows and APIs to support onboarding and knowledge transfer.",
+    ],
+  },
+  {
+    company: "Goldtech ICT Hub LTD",
+    location: "Lagos, Nigeria",
+    role: "Software Engineer / Instructor",
+    dates: "Sep 2024 – Dec 2024",
+    highlights: [
+      "Conducted training sessions for 50+ students across frontend and backend technologies.",
+      "Designed real-world projects to improve learning outcomes and employability.",
+      "Mentored developers-in-training and helped shape a strong foundation in modern web development.",
+    ],
+  },
+  {
+    company: "Babtech Computers",
+    location: "Lagos, Nigeria",
+    role: "Frontend Web Developer",
+    dates: "Oct 2023 – Apr 2024",
+    highlights: [
+      "Led development of responsive web applications, improving user engagement by 20%.",
+      "Mentored junior developers on best practices in React and CSS frameworks.",
+      "Collaborated with cross-functional teams to deliver optimized solutions.",
+      "Supported students as an instructor, guiding budding IT enthusiasts.",
+    ],
+  },
 ];
 
 function Badge({ children }: { children: React.ReactNode }) {
@@ -145,14 +201,29 @@ export default function Home() {
               href="#top"
               className="inline-flex items-center gap-2 font-semibold tracking-tight text-slate-900 dark:text-slate-100"
             >
-              <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-slate-900 text-sm font-semibold text-white dark:bg-white dark:text-slate-900">
-                O
+              <span className="relative inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-blue-600 via-fuchsia-600 to-emerald-500 p-[1px]">
+                <span className="inline-flex h-full w-full items-center justify-center rounded-[11px] bg-white text-xs font-extrabold tracking-tight text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+                  OO
+                </span>
               </span>
-              Ola
+              <span className="flex flex-col leading-none">
+                <span className="text-sm font-semibold tracking-tight">
+                  Olatunbosun
+                </span>
+                <span className="mt-1 text-xs font-semibold text-slate-500 dark:text-slate-400">
+                  Olashubomi
+                </span>
+              </span>
             </Link>
             <nav className="hidden items-center gap-8 text-sm font-semibold text-slate-700 dark:text-slate-300 md:flex">
               <Link href="#about" className="hover:text-slate-900 dark:hover:text-white">
                 About
+              </Link>
+              <Link
+                href="#experience"
+                className="hover:text-slate-900 dark:hover:text-white"
+              >
+                Experience
               </Link>
               <Link href="#services" className="hover:text-slate-900 dark:hover:text-white">
                 Services
@@ -174,6 +245,13 @@ export default function Home() {
               >
                 Let&apos;s Talk
               </Link>
+              <Link
+                href="/OLATUNBOSUN_RESUME.pdf"
+                target="_blank"
+                className="hidden rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-950 dark:text-slate-100 dark:hover:bg-slate-900 sm:inline-flex"
+              >
+                Resume
+              </Link>
               <ThemeToggle />
             </div>
           </div>
@@ -191,18 +269,25 @@ export default function Home() {
             <div className="grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr]">
               <div>
                 <div className="flex flex-wrap gap-2">
-                  <Badge>Backend-first Full-Stack</Badge>
+                  <Badge>Software Engineer</Badge>
+                  <Badge>Web & Mobile</Badge>
                   <Badge>APIs • Auth • Databases</Badge>
                   <Badge>Automation • AI</Badge>
                 </div>
                 <h1 className="mt-8 text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-100 sm:text-6xl">
-                  Building scalable web products with clean systems and modern UX.
+                  Olatunbosun Olashubomi
                 </h1>
+                <p className="mt-4 max-w-2xl text-base font-semibold tracking-tight text-slate-700 dark:text-slate-300">
+                  Software Engineer | Web, Mobile & Automation Engineer
+                </p>
                 <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-400">
-                  I&apos;m Ola, a results-driven software engineer based in Nigeria. I
-                  design secure REST APIs, build maintainable backend architecture, and
-                  ship responsive interfaces in React/Next.js—plus automation and
-                  AI-assisted features where they create real value.
+                  Highly skilled software engineer with a strong foundation in
+                  designing, developing, and deploying scalable software solutions. I
+                  collaborate across teams to deliver innovative products and optimize
+                  system performance—focused on impact, clarity, and maintainability.
+                </p>
+                <p className="mt-4 text-sm font-semibold text-slate-600 dark:text-slate-400">
+                  Lagos, Nigeria
                 </p>
 
                 <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -212,6 +297,13 @@ export default function Home() {
                   >
                     <CiMail className="h-5 w-5" />
                     Email Me
+                  </Link>
+                  <Link
+                    href="/OLATUNBOSUN_RESUME.pdf"
+                    target="_blank"
+                    className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-950 dark:text-slate-100 dark:hover:bg-slate-900"
+                  >
+                    Download Resume
                   </Link>
                   <Link
                     href="https://github.com/Derrick99234"
@@ -231,11 +323,11 @@ export default function Home() {
                       AVAILABLE FOR
                     </p>
                     <p className="mt-3 text-2xl font-semibold text-slate-900 dark:text-slate-100">
-                      Full-time • Contract • Remote
+                      Contract • Remote
                     </p>
                     <p className="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-400">
-                      Strong backend foundations with solid frontend delivery. Clear
-                      ownership from requirements to shipping.
+                      Full-stack delivery with strong backend foundations across web
+                      and mobile development.
                     </p>
                   </div>
                 </div>
@@ -246,7 +338,7 @@ export default function Home() {
                       Focus
                     </p>
                     <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-                      Secure APIs, auth flows, database performance, automation.
+                      Full-stack apps, scalable APIs, auth flows, and workflow automation.
                     </p>
                   </div>
                   <div className="rounded-2xl border border-slate-200 bg-white px-5 py-4 dark:border-slate-800 dark:bg-slate-950">
@@ -254,7 +346,7 @@ export default function Home() {
                       Strengths
                     </p>
                     <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-                      Modular architecture, debugging, scalability, maintainable code.
+                      Problem-solving, performance optimization, and maintainable systems.
                     </p>
                   </div>
                 </div>
@@ -297,16 +389,15 @@ export default function Home() {
                 Summary
               </h3>
               <p className="mt-4 leading-8 text-slate-600 dark:text-slate-400">
-                I&apos;m a versatile full-stack engineer with stronger depth in backend
-                systems. I build practical, scalable solutions, keep contracts clear
-                between frontend and backend, and optimize for reliability over time.
+                I&apos;m a versatile full-stack engineer with stronger depth in backend systems. I build practical, scalable solutions, keep contracts clear between frontend and backend, and optimize for reliability over time.
               </p>
               <div className="mt-6 flex flex-wrap gap-2">
-                <Badge>RESTful APIs</Badge>
-                <Badge>JWT + RBAC</Badge>
-                <Badge>Modular Architecture</Badge>
-                <Badge>Performance</Badge>
-                <Badge>Integrations</Badge>
+                <Badge>React</Badge>
+                <Badge>Next.js</Badge>
+                <Badge>Node.js</Badge>
+                <Badge>Nest.js</Badge>
+                <Badge>MongoDB</Badge>
+                <Badge>React Native</Badge>
               </div>
             </div>
 
@@ -338,6 +429,37 @@ export default function Home() {
                 </div>
               ))}
             </div>
+          </div>
+        </Section>
+
+        <Section id="experience" eyebrow="Experience" title="Professional experience">
+          <div className="grid gap-6">
+            {experience.map((job) => (
+              <div
+                key={`${job.company}-${job.dates}`}
+                className="rounded-3xl border border-slate-200 bg-white/70 p-8 shadow-sm backdrop-blur dark:border-slate-800 dark:bg-slate-950/40 dark:shadow-none"
+              >
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                  <div>
+                    <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+                      {job.role}
+                    </h3>
+                    <p className="mt-1 text-sm font-semibold text-slate-700 dark:text-slate-300">
+                      {job.company} • {job.location}
+                    </p>
+                  </div>
+                  <Badge>{job.dates}</Badge>
+                </div>
+                <ul className="mt-5 space-y-3 text-sm leading-7 text-slate-600 dark:text-slate-400">
+                  {job.highlights.map((highlight) => (
+                    <li key={highlight} className="flex gap-3">
+                      <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-slate-300 dark:bg-slate-700" />
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </Section>
 
@@ -385,7 +507,7 @@ export default function Home() {
         </Section>
 
         <Section id="stack" eyebrow="Stack" title="Tools I work with">
-          <div className="grid gap-6 lg:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2">
             <div className="rounded-3xl border border-slate-200 bg-white/70 p-8 shadow-sm backdrop-blur dark:border-slate-800 dark:bg-slate-950/40 dark:shadow-none">
               <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
                 Frontend
@@ -402,6 +524,26 @@ export default function Home() {
               </h3>
               <div className="mt-5 flex flex-wrap gap-2">
                 {backendSkills.map((skill) => (
+                  <Badge key={skill}>{skill}</Badge>
+                ))}
+              </div>
+            </div>
+            <div className="rounded-3xl border border-slate-200 bg-white/70 p-8 shadow-sm backdrop-blur dark:border-slate-800 dark:bg-slate-950/40 dark:shadow-none">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+                Mobile
+              </h3>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {mobileSkills.map((skill) => (
+                  <Badge key={skill}>{skill}</Badge>
+                ))}
+              </div>
+            </div>
+            <div className="rounded-3xl border border-slate-200 bg-white/70 p-8 shadow-sm backdrop-blur dark:border-slate-800 dark:bg-slate-950/40 dark:shadow-none">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+                Tools
+              </h3>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {toolsSkills.map((skill) => (
                   <Badge key={skill}>{skill}</Badge>
                 ))}
               </div>
@@ -490,10 +632,13 @@ export default function Home() {
               </h3>
               <div className="mt-6 grid gap-3">
                 {[
-                  { label: "Role", value: "Full-Stack Software Engineer" },
-                  { label: "Primary Strength", value: "Backend Systems" },
-                  { label: "Location", value: "Nigeria" },
-                  { label: "Availability", value: "Full-time • Contract • Remote" },
+                  {
+                    label: "Role",
+                    value: "Software Engineer (Web & Mobile Applications)",
+                  },
+                  { label: "Primary Strength", value: "Full-Stack (Backend-leaning)" },
+                  { label: "Location", value: "Lagos, Nigeria" },
+                  { label: "Availability", value: "Contract • Remote" },
                 ].map((item) => (
                   <div
                     key={item.label}
@@ -524,18 +669,12 @@ export default function Home() {
       <footer className="border-t border-slate-200 py-10 dark:border-slate-800">
         <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-4 px-6 sm:flex-row sm:items-center">
           <p className="text-sm text-slate-600 dark:text-slate-400">
-            © {new Date().getFullYear()} Ola. All rights reserved.
+            © {new Date().getFullYear()} Olatunbosun Olashubomi. All rights
+            reserved.
           </p>
           <div className="flex flex-wrap gap-4 text-sm font-semibold text-slate-700 dark:text-slate-300">
             <Link href="#top" className="hover:text-slate-900 dark:hover:text-white">
               Back to top
-            </Link>
-            <Link
-              href="https://portfolio-main-two-puce.vercel.app/"
-              target="_blank"
-              className="hover:text-slate-900 dark:hover:text-white"
-            >
-              Previous version
             </Link>
           </div>
         </div>
