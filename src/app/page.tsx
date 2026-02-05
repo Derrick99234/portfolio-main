@@ -73,10 +73,24 @@ const toolsSkills = ["Jira", "Trello", "Figma", "VS Code", "Git", "GitHub"];
 
 const experience: Experience[] = [
   {
+    company: "iDeyFind",
+    location: "Remote",
+    role: "Software Engineer",
+    dates: "Jan 2024 - Dec 2025",
+    highlights: [
+      "Collaborated closely with a cross-functional team to design, build, and maintain an internal product from concept to production.",
+      "Engaged in Agile ceremonies (sprint planning, daily stand-ups, retrospectives) to align on goals and continuously improve team delivery.",
+      "Created and maintained technical documentation to support team knowledge sharing, onboarding, and long-term product sustainability.",
+      "Used Git-based workflows to collaborate efficiently, manage feature branches, and ensure a stable development pipeline.",
+      "Developed and maintained RESTful APIs and core application features tailored specifically to internal business needs.",
+      "Collaborated closely with a cross-functional team to design, build, and maintain an internal product from concept to production.",
+    ],
+  },
+  {
     company: "Sleeky Programmers Limited",
     location: "Remote",
     role: "Intern Software Engineer",
-    dates: "Aug 2024 – Present",
+    dates: "Aug 2024 - Apr 2025",
     highlights: [
       "Participated in code reviews to maintain high-quality standards and best practices.",
       "Worked in Agile ceremonies (sprint planning, stand-ups, retrospectives).",
@@ -90,7 +104,7 @@ const experience: Experience[] = [
     company: "Goldtech ICT Hub LTD",
     location: "Lagos, Nigeria",
     role: "Software Engineer / Instructor",
-    dates: "Sep 2024 – Dec 2024",
+    dates: "Sep 2024 - Dec 2024",
     highlights: [
       "Conducted training sessions for 50+ students across frontend and backend technologies.",
       "Designed real-world projects to improve learning outcomes and employability.",
@@ -101,7 +115,7 @@ const experience: Experience[] = [
     company: "Babtech Computers",
     location: "Lagos, Nigeria",
     role: "Frontend Web Developer",
-    dates: "Oct 2023 – Apr 2024",
+    dates: "Oct 2023 - Apr 2024",
     highlights: [
       "Led development of responsive web applications, improving user engagement by 20%.",
       "Mentored junior developers on best practices in React and CSS frameworks.",
