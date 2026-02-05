@@ -1,0 +1,112 @@
+{
+  "profile": {
+    "name": "Olatunbosun Olashubomi",
+    "title": "Software Engineer | Web, Mobile & Automation Engineer",
+    "location": "Lagos, Nigeria",
+    "email": "pshubomi@gmail.com",
+    "phone": "+234 916 196 5510",
+    "links": {
+      "github": "https://github.com/Derrick99234",
+      "linkedin": "https://www.linkedin.com/in/derricktechtron-73717b23a",
+      "x": "https://x.com/Derrick9923"
+    }
+  },
+  "resumeSummary": [
+    "Software Engineer with strong full-stack delivery across web and mobile applications. I build scalable, maintainable products with clean APIs, authentication flows, and reliable database integration.",
+    "I collaborate effectively with cross-functional teams, participate in Agile ceremonies, and create clear technical documentation to support onboarding and long-term product sustainability."
+  ],
+  "projects": [
+    {
+      "title": "API Platform",
+      "description": "A modular REST API with clean architecture, robust error handling, and authentication-ready patterns.",
+      "tags": ["Node.js", "TypeScript", "MongoDB", "JWT"]
+    },
+    {
+      "title": "Admin Dashboard",
+      "description": "A fast, responsive dashboard with clean UI, reliable API integration, and performance-focused components.",
+      "tags": ["Next.js", "React", "Tailwind"]
+    },
+    {
+      "title": "Workflow Automation",
+      "description": "Automation-first tooling and integrations that reduce manual work, with pragmatic AI-assisted features.",
+      "tags": ["Automation", "Integrations", "AI"]
+    }
+  ],
+  "skills": {
+    "frontend": [
+      "React.js",
+      "Next.js",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "backend": [
+      "Node.js",
+      "Express.js",
+      "Nest.js",
+      "MongoDB",
+      "Postman",
+      "AWS",
+      "Python",
+      "Firebase",
+      "Django",
+      "JWT / RBAC"
+    ],
+    "mobile": ["React Native", "NativeWind", "Expo", "TypeScript"],
+    "tools": ["Jira", "Trello", "Figma", "VS Code", "Git", "GitHub"]
+  },
+  "experience": [
+    {
+      "company": "iDeyFind",
+      "location": "Remote",
+      "role": "Software Engineer",
+      "dates": "Jan 2024 - Dec 2025",
+      "highlights": [
+        "Collaborated closely with a cross-functional team to design, build, and maintain an internal product from concept to production.",
+        "Engaged in Agile ceremonies (sprint planning, daily stand-ups, retrospectives) to align on goals and continuously improve delivery.",
+        "Created and maintained technical documentation to support knowledge sharing, onboarding, and long-term product sustainability.",
+        "Used Git-based workflows to collaborate efficiently, manage feature branches, and maintain a stable development pipeline.",
+        "Developed and maintained RESTful APIs and core application features tailored to internal business needs."
+      ]
+    },
+    {
+      "company": "Sleeky Programmers Limited",
+      "location": "Remote",
+      "role": "Intern Software Engineer",
+      "dates": "Aug 2024 - Apr 2025",
+      "highlights": [
+        "Participated in code reviews to maintain high-quality standards and best practices.",
+        "Worked in Agile ceremonies (sprint planning, stand-ups, retrospectives).",
+        "Built RESTful APIs and integrated third-party services to streamline application processes.",
+        "Contributed to scalable web applications using Next.js, Nest.js, Express.js, React, MongoDB, Node.js, and TypeScript.",
+        "Used Git workflows to collaborate, resolve conflicts, and keep a clean development pipeline.",
+        "Wrote technical documentation for project workflows and APIs to support onboarding and knowledge transfer."
+      ]
+    },
+    {
+      "company": "Goldtech ICT Hub LTD",
+      "location": "Lagos, Nigeria",
+      "role": "Software Engineer / Instructor",
+      "dates": "Sep 2024 - Dec 2024",
+      "highlights": [
+        "Conducted training sessions for 50+ students across frontend and backend technologies.",
+        "Designed real-world projects to improve learning outcomes and employability.",
+        "Mentored developers-in-training and helped shape a strong foundation in modern web development."
+      ]
+    },
+    {
+      "company": "Babtech Computers",
+      "location": "Lagos, Nigeria",
+      "role": "Frontend Web Developer",
+      "dates": "Oct 2023 - Apr 2024",
+      "highlights": [
+        "Led the development of responsive web applications, improving user engagement by 20%.",
+        "Mentored junior developers on best practices in React and CSS frameworks.",
+        "Collaborated with cross-functional teams to deliver optimized solutions.",
+        "Supported students as an instructor, guiding budding IT enthusiasts."
+      ]
+    }
+  ]
+}
