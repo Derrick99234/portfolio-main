@@ -67,7 +67,7 @@ const backendSkills = [
   "JavaScript",
 ];
 
-const mobileSkills = ["React Native"];
+const mobileSkills = ["React Native", "NativeWind", "Expo", "TypeScript"];
 
 const toolsSkills = ["Jira", "Trello", "Figma", "VS Code", "Git", "GitHub"];
 
