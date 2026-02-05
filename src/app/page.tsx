@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
@@ -400,19 +401,46 @@ export default function Home() {
         <Section id="about" eyebrow="About" title="Engineering that ships">
           <div className="grid gap-10 lg:grid-cols-2">
             <div className="rounded-3xl border border-slate-200 bg-white/70 p-8 shadow-sm backdrop-blur dark:border-slate-800 dark:bg-slate-950/40 dark:shadow-none">
-              <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
-                Summary
-              </h3>
-              <p className="mt-4 leading-8 text-slate-600 dark:text-slate-400">
-                I&apos;m a versatile full-stack engineer with stronger depth in backend systems. I build practical, scalable solutions, keep contracts clear between frontend and backend, and optimize for reliability over time.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-2">
-                <Badge>React</Badge>
-                <Badge>Next.js</Badge>
-                <Badge>Node.js</Badge>
-                <Badge>Nest.js</Badge>
-                <Badge>MongoDB</Badge>
-                <Badge>React Native</Badge>
+              <div className="flex flex-col gap-6">
+                <div className="overflow-hidden rounded-3xl border border-slate-200 dark:border-slate-800">
+                  <Image
+                    src="/ola-profile.png"
+                    alt="Olatunbosun Olashubomi"
+                    width={900}
+                    height={900}
+                    priority
+                    className="aspect-square w-full object-cover object-top"
+                  />
+                </div>
+
+                <div>
+                  <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+                    About me
+                  </h3>
+                  <p className="mt-4 leading-8 text-slate-600 dark:text-slate-400">
+                    I&apos;m Olatunbosun Olashubomi, a software engineer in Lagos,
+                    Nigeria. I build scalable web and mobile applications with a
+                    strong backend foundation—clean APIs, authentication flows, and
+                    reliable database integration—while also delivering modern UIs in
+                    React/Next.js and React Native.
+                  </p>
+                  <p className="mt-4 leading-8 text-slate-600 dark:text-slate-400">
+                    I&apos;ve also worked as an instructor, training and mentoring
+                    students across frontend and backend technologies, and I bring
+                    that clarity into how I communicate, document, and ship work on a
+                    team.
+                  </p>
+                  {/* <div className="mt-6 flex flex-wrap gap-2">
+                    <Badge>JavaScript</Badge>
+                    <Badge>TypeScript</Badge>
+                    <Badge>React</Badge>
+                    <Badge>Next.js</Badge>
+                    <Badge>Node.js</Badge>
+                    <Badge>Nest.js</Badge>
+                    <Badge>MongoDB</Badge>
+                    <Badge>React Native</Badge>
+                  </div> */}
+                </div>
               </div>
             </div>
 
@@ -421,14 +449,20 @@ export default function Home() {
                 {
                   title: "Backend Engineering",
                   text: "Secure APIs, authentication, database design, logging, and debugging with scalable structure.",
+                  detail:
+                    "I build RESTful APIs, implement JWT/RBAC, integrate MongoDB, and connect third-party services with reliable error handling.",
                 },
                 {
                   title: "Frontend Delivery",
                   text: "Responsive interfaces in React/Next.js with clean integration and performance focus.",
+                  detail:
+                    "I ship accessible UI, reusable components, and API-driven screens that stay fast on mobile and desktop.",
                 },
                 {
                   title: "Automation & AI",
                   text: "Automate manual workflows and integrate AI features pragmatically for real business value.",
+                  detail:
+                    "I automate repetitive processes, build integrations, and add AI-assisted features where they improve real outcomes.",
                 },
               ].map((item) => (
                 <div
@@ -440,6 +474,9 @@ export default function Home() {
                   </h3>
                   <p className="mt-2 text-sm leading-7 text-slate-600 dark:text-slate-400">
                     {item.text}
+                  </p>
+                  <p className="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-400">
+                    {item.detail}
                   </p>
                 </div>
               ))}
@@ -649,7 +686,7 @@ export default function Home() {
                 {[
                   {
                     label: "Role",
-                    value: "Software Engineer (Web & Mobile Applications)",
+                    value: "Software Engineer",
                   },
                   { label: "Primary Strength", value: "Full-Stack (Backend-leaning)" },
                   { label: "Location", value: "Lagos, Nigeria" },
