@@ -49,7 +49,8 @@ const frontendSkills = [
   "HTML5",
   "CSS3",
   "Tailwind CSS",
-  "Bootstrap",
+  "TypeScript",
+  "JavaScript",
 ];
 
 const backendSkills = [
